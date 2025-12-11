@@ -1,0 +1,12 @@
+Aula 01 de Java Script - Client x Server
+
+
+Celular e computador = cliente
+Servidor = Server
+
+O navegador te leva a internet e com o url do site ele te envia para um servidor do url, logo após o servidor te envia uma cópia do site.
+
+Website: 
+HTML (Interface)(Conteúdo)
+CSS (Designer)(Estilo)
+JS (Interações)
