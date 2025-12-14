@@ -17,7 +17,7 @@ JS (Interações)
 
     var a //cria uma variável a (identificador)
 
-**Identificadores**
+**Identificadores**  
     Podem começar com letra, $ ou _
     Não podem começar com números
     É possível usar letras ou números
