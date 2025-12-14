@@ -1,4 +1,4 @@
-Aula 01 -- CLIENTE X SERVER//////////////////////////////////////
+*__Aula 01 -- CLIENTE X SERVER//////////////////////////////////////__*
 
 Celular e computador = cliente
 Servidor = Server
@@ -9,7 +9,7 @@ CSS (Designer)(Estilo)
 JS (Interações)
 
 
-Aula 05 -- VARIÁVEIS E TIPOS PRIMITIVOS//////////////////////////
+*__Aula 05 -- VARIÁVEIS E TIPOS PRIMITIVOS//////////////////////////__*
 
 **Comentário**
     //
@@ -38,7 +38,7 @@ Aula 05 -- VARIÁVEIS E TIPOS PRIMITIVOS//////////////////////////
     function
 
 
-Aula 06 -- TRATAMENTO DE DADOS///////////////////////////////////
+*__Aula 06 -- TRATAMENTO DE DADOS///////////////////////////////////__*
 
     typeof(a)  //Diz qual o tipo de dado da variável "a"
 
@@ -63,3 +63,14 @@ Aula 06 -- TRATAMENTO DE DADOS///////////////////////////////////
     n1.toFixed(2)  //faz aparecer dois números após o ponto
     n1.toFixed(2).replace('.', ',')  // , troca o ponto pela vírgula (replace = troca, *só funciona em string)
     n1.toLocaleString('pt-BR',{style:'currency', currency:'BRL'})  // , modelo monetário, dps adiciona o tipo da moeda.
+
+*__Aula 07 -- OPERADORES ARITIMÉTICOS///////////////////////////////__*
+
+**Operadores**
+    + = soma
+    - = subtração
+    * = multiplicação
+    / = divisão
+    % = resto da divisão
+    ** = potenciação
+
