@@ -48,7 +48,7 @@ function
 ```
 typeof(a)  //Diz qual o tipo de dado da variável "a"  
 ```
-**Transformando tipo de dados**
+###Transformando tipo de dados
 ```
 Number.parseInt(n)  //transforma para int  
 Number.parseFloat(n)  //transforma para float  
