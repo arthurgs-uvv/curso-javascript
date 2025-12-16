@@ -25,20 +25,31 @@
 ```
 getElementsByTagName()
 ```
-### Por ID
+#### Por ID
 ```
 getElementById()
 ```
-### Por Nome
+#### Por Nome
 ```
 getElementsByName()
 ```
-### Por Classe
+#### Por Classe
 ```
 getElementsByClassName()
 ```
-### Por Seletor
+#### Por Seletor 
 ```
-querySelector()
-querySelectorAll()
+querySelector()     //através de elementos CSS
+querySelectorAll()  //através de elementos CSS
+```
+
+### Eventos DOM
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Events
+
+
+### Funções
+```
+function ação(parâmetro){
+    bloco
+}
 ```
