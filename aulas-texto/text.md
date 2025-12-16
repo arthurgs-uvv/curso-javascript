@@ -79,10 +79,40 @@ n1.toLocaleString('pt-BR',{style:'currency', currency:'BRL'})  // , modelo monet
 
 ### Operadores 
 ```
-+ = soma  
-- = subtração  
-* = multiplicação 
-/ = divisão  
-% = resto da divisão  
-** = potenciação
++   = soma  
+-   = subtração  
+*   = multiplicação 
+/   = divisão  
+%   = resto da divisão  
+**  = potenciação
+++  = incrementação por um
+--  = decrementação por um
+>   = maior que
+<   = menor que
+>=  = maior ou igual a
+<=  = menor ou igual a
+==  = valor igual
+!=  = valor diferente
+=== = tipo igual
+!   = negação
+&&  = and, e, conjunção
+||  = or, ou, disjunção
+```
+### Operação curta 
+```
+n=n+x  ==  n+=x
+```
+### Precedência
+```
+1º () ** /
+2º > < >=
+3º !
+4º &&
+5º ||
+```
+### Operador Ternário
+```
+teste ? true : false
+exemplo:
+média >= 7.0 ? "Aprovado" : "Reprovado"
 ```
