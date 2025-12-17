@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País de Origem</title>
+    <style>
+        body{
+            background-color: rgba(255, 124, 222, 0.568);
+            color: rgb(66, 0, 63);
+        }
+        
+        #butao{
+            background-color: rgb(204, 0, 0);
+            color: rgb(255, 255, 255);
+            height: auto;
+            width: auto;
+            font-size: large;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        #main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            width: 200px;
+            flex-wrap: wrap;
+        }
+        span{
+            margin-top: 5px;
+        }
+        input{
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+        h1{
+            text-align: center;
+        }
+        #res{
+            width: max-content;
+            text-align: center;
+        }
+        #gato{
+            width: 300px;
+        }
+        #res{
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>Você é Estrangeiro?</h1>
+        <span>Me diga seu país de origem:</span> <br>
+        <input type="text" name="pais-nasc" id="pais-nasc"> <br>
+        <span>Me diga o país que está:</span> <br>
+        <input type="text" name="pais-atual" id="pais-atual"> <br>
+        <input type="button" id="butao" value="Verificar" onclick="verificar()">
+        <div id="res">Você é estrangeiro?</div>
+    </div>
+    <script>
+        function verificar(){
+            var nasc = window.document.querySelector('input#pais-nasc').value
+            var atual = window.document.querySelector('input#pais-atual').value
+            var res = window.document.querySelector('div#res')
+            
+            if ((nasc == '') || (atual == '')){
+                res.innerHTML = 'Por favor digite os paises'
+            } else {
+                if (nasc == atual){
+                    res.innerHTML = `Você não é estrangeiro aqui, até a próxima <br> <img src="./como-cuidar-de-gatos-filhotes.jpg" alt="gato" id="gato">`
+                } else{
+                    res.innerHTML = `Você é estrangeiro aqui, <strong>se entregue agora caso esteja entrando ilegalmente</strong>, caso não, aproveite, até a próxima`
+                }
+            }
+        }
+    </script>
+</body>
+</html>
