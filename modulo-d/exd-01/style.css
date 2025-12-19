@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(33, 74, 255);
+    font: normal 15pt Arial;
+}
+
+header{
+    text-align: center;
+    color: white;
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.507);
+}
+
+section{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 700px;
+    margin: auto;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.486);
+    height: 350px;
+    font-size: larger;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.507);
+}
+
+#div-1{
+    text-align: center;
+}
+
+#div-2{
+    display: flex;
+    justify-content: center;
+}
+
+#imgHora{
+    background-color: black;
+    margin-top: 15px;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.493);
+}
