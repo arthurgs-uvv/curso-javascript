@@ -11,11 +11,23 @@
         <h1>Título</h1>
     </header>
     <section>
-        <div>
-            
+        <div class="div-1">
+            <p>
+                Ano de Nascimento:
+                <input type="number" id="input-ano">
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem" checked>
+                <label for="fem">Feminino</label>
+            </p>
+            <input type="button" value="Verificar" onclick="verificar()" class="input-verificar">
         </div>
-        <div>
-
+        <br>
+        <div id="res">
+            Preencha os dados acima para ver o resultado
         </div>
     </section>
     <footer>

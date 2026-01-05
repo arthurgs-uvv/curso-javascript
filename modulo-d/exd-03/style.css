@@ -9,6 +9,7 @@ header {
 }
 
 section {
+    font-size: 12pt;
     background-color: white;
     border-radius: 10px;
     padding: 15px;
@@ -21,4 +22,18 @@ footer {
     color: white;
     text-align: center;
     font-style: italic;
+}
+
+#input-ano{
+    width: 100px;
+}
+
+.div-1{
+    width: max-content;
+    margin: auto;
+    text-align: center;
+}
+
+#res{
+    text-align: center;
 }
