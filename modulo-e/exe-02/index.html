@@ -8,23 +8,17 @@
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
         <div>
-            <span>Início:</span>
-            <input type="Number" id="inicio">
-            <br>
-            <span>Fim:</span>
-            <input type="Number" id="fim">
-            <br>
-            <span>Passo:</span>
-            <input type="Number" id="passo">
-            <br>
-            <input type="Button" value="Contar" onclick="contar()" id="botao">
+            <span>Digite um número:</span>
+            <input type="Number" id="valor">
+            <input type="button" value="Gerar Tabuada" id="botao"
+            onclick="tabuada()">
         </div>
-        <div id="resposta">
-            
+        <div id="res">
+
         </div>
     </section>
     <footer>
