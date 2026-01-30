@@ -24,15 +24,21 @@ footer {
 }
 
 .div-2{
+    text-align: center;
 }
 
 #info{
     margin-top: 20px;
-    margin-left: 100px;
-    width: 300px;
+    margin-left: 150px;
+    width: 200px;
     min-height: 50px;
     height: auto;
     border: 1px solid black;
     border-radius: 5px;
     font-size: medium;
+    padding: 10px;
+}
+
+#res{
+    margin-top: 15px;
 }

@@ -15,7 +15,8 @@ num.push(7)     //acrecenta um valor (7)
 
 num.length      //diz o tamanho do array
 
-num.sort()      //coloca em ordem os valores
+num.sort()      //coloca em ordem crescente os valores de string
+num.sort(function(a, b){return a-b})    //para números
 
 for(let pos in num){ //for reduzido
     console.log(num[pos])
