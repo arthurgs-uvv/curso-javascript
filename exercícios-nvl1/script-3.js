@@ -20,4 +20,4 @@ function contador(ini, fim, passo){
     }
 }
 
-console.log(contador(0, 0, 0))
+console.log(contador(11, 0, -2))
