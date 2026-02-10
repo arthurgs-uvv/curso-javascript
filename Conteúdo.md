@@ -282,10 +282,28 @@ function fatorial(n){
 ``` 
 
 ## Objeto
-
 ```
-let variável = {
-    atributo: "atributo 1",
-    atributo: "atributo 2"
+let objeto = {
+    chave: valor,
+    chave2: valor2,
+    chave3: function(){}
 }
 ```
+Quando uma função está dentro de um objeto, chamamos de método.  
+
+### Acessar dados
+```
+objeto.chave
+objeto["chave"]
+Remover dados: delete objeto.chave
+```
+
+### Propriedades
+```
+let obj1 = obj2 //Apontam para o mesmo obj na memória
+
+this.chave  //Referênciar dentro do próprio objeto
+
+for(let chave in objeto){
+    console.log(chave, objeto[chave])
+}

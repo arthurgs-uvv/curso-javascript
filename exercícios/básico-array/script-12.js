@@ -14,5 +14,5 @@ function segundo(arr){
     return seg
 }
 
-let array = [5, 10, 3, 8, 9, 22, 3, 5, 21]
+let array = [5, 10, 3]
 console.log(segundo(array))
