@@ -279,4 +279,13 @@ function fatorial(n){
         return n * fatorial(n-1)
     }
 }
+``` 
+
+## Objeto
+
+```
+let variável = {
+    atributo: "atributo 1",
+    atributo: "atributo 2"
+}
 ```
