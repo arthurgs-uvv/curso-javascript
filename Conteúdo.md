@@ -246,7 +246,7 @@ num.length      //diz o tamanho do array
 num.sort()      //coloca em ordem crescente os valores de string
 num.sort(function(a, b){return a-b})    //para números
 
-for(let pos in num){ //for reduzido
+for(let pos of num){ //for reduzido
     console.log(num[pos])
 }
 
@@ -286,7 +286,7 @@ function fatorial(n){
 let objeto = {
     chave: valor,
     chave2: valor2,
-    chave3: function(){}
+    function(){}
 }
 ```
 Quando uma função está dentro de um objeto, chamamos de método.  
