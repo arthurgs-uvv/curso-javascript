@@ -228,7 +228,7 @@ for(let pos in num) //for reduzido
 
 # Avançando
 
-## Variáveis Compostas (ARRAY ou VETOR)
+## Array/Vetor (Variável composta)
 
 - Variáveis simples só conseguem armazenar um valor por vez.  
 
@@ -239,15 +239,22 @@ let num = [valor 1, valor 2, valor 3]
 
 num [3] = 6
 
-num.push(7)     //acrecenta um valor (7)
+num.push()     //acrecenta um valor por último
+num.pop()       //remove e retorna o último valor
+num.shift()     //remove e retorna o primeiro item do array
+num.unshift()   //acrescenta um valor no primeiro item no array
 
 num.length      //diz o tamanho do array
 
 num.sort()      //coloca em ordem crescente os valores de string
 num.sort(function(a, b){return a-b})    //para números
 
-for(let pos of num){ //for reduzido
+for(let pos in num){ //for reduzido - in torna pos a posição do array
     console.log(num[pos])
+}
+
+for(let pos of num){ //for reduzido - of torna pos o valor do array
+    console.log(pos)
 }
 
 num.indexOf(7)  //procura no vetor o valor 7 e retorna a posição, se não encontrar retorna -1
@@ -256,20 +263,29 @@ num.indexOf(7)  //procura no vetor o valor 7 e retorna a posição, se não enco
 ## Funções
 
 - São ações executadas assim que são chamadas ou em decorrência de um evento.  
-
 - Uma função pode receber parâmetros e retornar um resultado.
 
 ```
-function nome(parâmetro){
-
+function nome(parâmetro){ //Quando declarada assim, é universal
     return [variável]
 }
+nome()                  //Chamar a função
 
-let v = function(x){
+let v = function(x){    //Só pode ser chamada após ser declarada
     return x
 }
-console.log(v(5))
+
+let nome = (parametros) => (return) //arrow function
+Ex: let sum = (a,b) => a + b;
+
+((name) = {             //IIFE (Expressão de função invocada imediatamente)
+    console.log(name)   //Só é possível executar uma única vez
+})("Arthur")
+
+function pow(n1, n2=2){} //Caso não receba nenhum valor n2=2
 ``` 
+
+
 ### Recursividade
 ```
 function fatorial(n){
@@ -307,3 +323,129 @@ this.chave  //Referênciar dentro do próprio objeto
 for(let chave in objeto){
     console.log(chave, objeto[chave])
 }
+```
+
+## Escopos
+- Bloco, função, léxico
+```
+Variaveis
+var = declarado de forma global
+const = declarado apenas no escopo
+let = declarado apenas no escopo
+
+Função
+Qualquer variável declarada dentro de uma função tem um escopo (até var)
+
+Léxico
+Caso uma função não encontre uma variável em seu escopo, ela procurará em um escopo acima
+```
+
+## Desestruturação
+```
+Objeto
+let objeto = {
+    num: 0
+    caixa: {
+        caixa1: valor1,
+        caixa2: valor2
+    }
+}
+let {num} = objeto //num = 0
+let {num: numero} = objeto //numero = 0 (caso queira renomear)
+let {num: {caixa1, caixa2}} = objeto //desestrutura objeto de objeto
+
+Array
+let array = [valor1, valor2]
+let [fistValue] = array //fistValue = valor1
+``` 
+
+# Documentos
+
+## Módulos
+
+- Caso queira utilizar itens de arquivos diferentes podemos utilizar o commomjs e es modules.  
+  
+CommomJs
+No .json "type": "commomjs"
+```
+module.exports = {item1, item2}
+
+const math = require("./caminho")
+const {sum} = require("./caminho")
+```
+  
+ES Modules
+No .json "type": "module"
+```
+export etc
+export default //Não pode desestruturar
+
+import { } from "./caminho"
+```
+
+## Bibliotecas
+
+- No terminal do package.json utilize: npm install (biblioteca)
+
+- Clack/prompt é interessante
+```
+import (itens) from "biblioteca";
+
+```
+
+## Scripts
+No package.json  
+  
+- Para executar os arquivos no terminal, utilize nmp run (scripts) (exemplo)
+
+- No package.json, quando for criar um arquivo .js (sempre colocar em uma pasta src), alterar o "main": para "src/index.js"  
+  
+- Em "Scripts": 
+
+- "start": "node --env-file .env src/index.js" (a parte do env serve para poder acessar esses dados)
+
+- .env : não é enviado para github, pode conter informações sensíveis.
+
+- "watch": "node --watch --env-file .env src/index.js" (serve para manter o arquivo sendo executado)
+
+## Caminhos
+
+```
+./ Mesma pasta
+../ Voltar uma pasta
+../../ Voltar duas pastas
+./folder/ Entra em uma pasta
+../out/ Volta uma pasta e entra em outra
+./file.js Acessa um arquivo
+```
+
+# Tipos de Dados
+
+## Strings
+
+- "Array" de caracteres
+- .length //contagem de caracteres
+- .toUpperCase() //tudo para maiúsculo
+- .toLowerCase() //tudo para minúsculo
+- .includes("") //saber se algo está incluso (true e false)
+- .startsWith("") //saber se começa com 
+- .endsWith("") //saber se finaliza com
+- .slice(n1, n2) //mostra de uma posição a outra
+- .replace("", "") //troca um valor da string por outro
+- .repeat(n) //repetir a string uma quant de vezes
+- .split("") //separa a string em um array
+- .join("") //junta os arrays em uma string
+
+
+## Booleanos
+
+- Boolean(variável) = ver o valor booleano
+
+- Truthy (verdadeiro, true)
+- Falsy (falso, false)
+
+- Truthy:
+- Números, strings não vazias, true, objetos, funções
+  
+- Falsy:
+- False, 0, -0, NaN, strings vazias, null, undefined
