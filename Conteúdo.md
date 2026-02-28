@@ -283,6 +283,8 @@ Ex: let sum = (a,b) => a + b;
 })("Arthur")
 
 function pow(n1, n2=2){} //Caso não receba nenhum valor n2=2
+
+...args - pode ser usado como parâmetro de função e ser chamado, ele é um array de possíveis valores que podem ser passados na função
 ``` 
 
 

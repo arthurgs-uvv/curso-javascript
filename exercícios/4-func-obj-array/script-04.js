@@ -1,3 +1,17 @@
+/*
+4) Array + filtro manual (Intermediário)
+
+Sem usar .filter().
+
+Crie uma função que:
+
+Receba um array de números
+
+Retorne um novo array apenas com números maiores que 10
+
+Não pode modificar o array original
+*/
+
 function filtro(arr){
     let arr2 = []
     for(let v of arr){

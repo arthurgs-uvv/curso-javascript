@@ -47,7 +47,9 @@ function limiteExec(func, x){
 let somaLimitada = limiteExec(soma, 3)
 
 console.log(somaLimitada(4, 8))
-console.log(somaLimitada(4, 8))
-console.log(somaLimitada(4, 8))
-console.log(somaLimitada(4, 8))
-console.log(somaLimitada(4, 8))
+console.log(somaLimitada(3, 8))
+console.log(somaLimitada(2, 8))
+console.log(somaLimitada(1, 8))
+console.log(somaLimitada(0, 8))
+
+//func deveria ter usado (...args), não conhecia
