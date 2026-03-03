@@ -28,6 +28,16 @@ function pow(n1, n2=2){} //Caso não receba nenhum valor n2=2
 ## Recursividade
 
 ```js
+//FÓRMULA UNIVERSAL:
+function algo(entrada) {
+    if (casoBase) {
+        return valorFinal
+    }
+
+    return resolverParte + algo(entradaMenor)
+}
+
+//EXEMPLO:
 function fatorial(n){
     if (n==1){
         return 1
