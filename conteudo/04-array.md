@@ -30,4 +30,6 @@ for(let pos of num){ //for reduzido - of torna pos o valor do array
 num.indexOf(7)  //procura no vetor o valor 7 e retorna a posição, se não encontrar retorna -1
 
 num.slice(inicio, fim) //é um método de arrays que serve para copiar uma parte do array sem modificar o array original.
+
+Array.isArray(minhaVariavel) //true se for array, false se não for
 ```
